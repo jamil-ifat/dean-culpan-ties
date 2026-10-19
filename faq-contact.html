@@ -6,40 +6,46 @@
 <meta name="robots" content="noindex">
 <title>FAQ & Contact — Dean Culpan Ties</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-<div class="announce">Free UK delivery over <span>£100</span><span class="hide-m"> &nbsp;·&nbsp; Gift boxed as standard</span></div>
-<header>
-  <div class="wrap nav">
-    <ul><li><a href="shop.html">Shop</a></li><li><a href="our-story.html">Our Story</a></li><li><a href="gifting.html">Gifting</a></li></ul>
-    <a href="#" class="menu-btn" onclick="document.getElementById('drawer').classList.toggle('open');return false">Menu</a>
-    <a href="index.html" class="logo"><b>DEAN CULPAN</b><small>TIES</small></a>
-    <ul class="right">
-      <li><a href="faq-contact.html">Help</a></li>
-      <li><a href="#">Account</a></li>
-      <li class="bag"><a href="cart.html">Bag (2)</a></li>
-    </ul>
-  </div>
-</header>
-<nav class="drawer" id="drawer"><a href="shop.html">Shop</a><a href="our-story.html">Our Story</a><a href="gifting.html">Gifting</a><a href="faq-contact.html">Help & FAQ</a><a href="shipping-returns.html">Shipping & Returns</a></nav>
-<div class="page-head"><div class="wrap"><div class="kicker">Help</div><h1>FAQ & Contact</h1><p>Questions about a tie, an order or a gift? We're friendly.</p></div></div><div class="stripes"></div>
-<section class="tight"><div class="wrap contact-grid">
-  <div><h2 style="text-align:left;font-size:38px;margin-bottom:28px">Frequently asked</h2><details open><summary>What are the ties made from?</summary><p>Knitted construction with a square-cut end. <em>[Material and dimensions to be confirmed with the manufacturer.]</em></p></details><details><summary>How long does delivery take?</summary><p>UK standard is 2–4 working days. See the shipping page for full details.</p></details><details><summary>Can I send a tie as a gift?</summary><p>Yes. Every tie arrives gift boxed, and you can add a handwritten note at checkout.</p></details><details><summary>Can I return a tie?</summary><p>Within 30 days, unworn and in the original box, for a refund or exchange.</p></details><details><summary>How should I care for a knitted tie?</summary><p>Spot clean only. Hang or roll it; never fold it.</p></details><details><summary>Do you ship internationally?</summary><p>Yes: Europe and the rest of the world. Prices and timings are on the shipping page.</p></details></div>
-  <div id="contact"><h2 style="text-align:left;font-size:38px;margin-bottom:28px">Get in touch</h2>
-    <form onsubmit="return false" style="display:block;border:0;max-width:none">
+<header class="hdr"><div class="in">
+  <div><button class="burger" data-menu aria-label="Open menu"><i></i><span>Menu</span></button></div>
+  <a href="index.html" class="logo"><b>DEAN CULPAN</b><small>TIES</small></a>
+  <div class="r"><a href="faq-contact.html">Help</a><a href="shop.html">Shop</a><a href="cart.html" class="bag">Bag (2)</a></div>
+</div></header>
+<div class="menu" id="menu">
+  <button class="burger close" data-menu aria-label="Close menu"><i style="border:0;height:auto;width:auto;font-size:26px;line-height:1">×</i><span>Close</span></button>
+  <nav><a href="shop.html"><span>01</span>Shop</a><a href="our-story.html"><span>02</span>Our Story</a><a href="gifting.html"><span>03</span>Gifting</a><a href="faq-contact.html"><span>04</span>Help &amp; FAQ</a><a href="shipping-returns.html"><span>05</span>Shipping &amp; Returns</a></nav>
+  <div class="side"><p>Earn your stripes.</p></div>
+  <div class="foot"><span>Instagram</span><span>TikTok</span><span>Pinterest</span></div>
+</div>
+<main>
+<div class="ph sm" style="--pos:center 85%"><div class="bg"></div><div class="wrap"><div class="eyebrow">Help</div><h1>FAQ &amp; <em>contact.</em></h1><p>Questions about a tie, an order or a gift? We're friendly.</p></div></div><div class="stripes"></div>
+<section class="sec tight"><div class="wrap contact-grid">
+  <div><h2>Frequently <em>asked</em></h2><details open><summary>What are the ties made from?</summary><p>Knitted construction with a square-cut end. <em>[Material and dimensions to be confirmed with the manufacturer.]</em></p></details><details><summary>How long does delivery take?</summary><p>UK standard is 2–4 working days. See the shipping page for full details.</p></details><details><summary>Can I send a tie as a gift?</summary><p>Yes. Every tie arrives gift boxed, and you can add a handwritten note at checkout.</p></details><details><summary>Can I return a tie?</summary><p>Within 30 days, unworn and in the original box, for a refund or exchange.</p></details><details><summary>How should I care for a knitted tie?</summary><p>Spot clean only. Hang or roll it; never fold it.</p></details><details><summary>Do you ship internationally?</summary><p>Yes: Europe and the rest of the world. Prices and timings are on the shipping page.</p></details></div>
+  <div id="contact"><h2>Get in <em>touch</em></h2>
+    <form onsubmit="return false">
       <label class="field"><span>Name</span><input type="text"></label>
       <label class="field"><span>Email</span><input type="email"></label>
       <label class="field"><span>Topic</span><select><option>An order</option><option>A product</option><option>A gift</option><option>Something else</option></select></label>
       <label class="field"><span>Message</span><textarea></textarea></label>
-      <button class="btn fill" style="width:100%;padding:18px">Send message</button>
+      <button class="btn fill wide">Send message</button>
     </form>
-    <p class="small" style="text-align:left">hello@deanculpan.com <em>(placeholder address)</em></p>
+    <p class="small">hello@deanculpan.com <em>(placeholder address)</em></p>
   </div>
 </div></section>
 
+</main>
 <footer>
+  <div class="stripes"></div>
+  <div class="big-cta"><div class="wrap">
+    <div class="eyebrow">The Inner Circle</div>
+    <h2 style="margin-top:22px">First look at<br>new <em>stripes.</em></h2>
+    <div class="row"><p>New designs, early access and the occasional bit of old-school swagger. No spam, just good taste.</p>
+    <form class="nl" onsubmit="return false"><input type="email" placeholder="Your email address"><button>Join</button></form></div>
+  </div></div>
   <div class="wrap">
     <div class="foot-grid">
       <div><div class="logo"><b>DEAN CULPAN</b><small>TIES</small></div><p>The Tycoon. Earn your stripes.</p></div>
@@ -50,5 +56,18 @@
     <div class="legal"><span>© 2026 Dean Culpan Ties</span><span>Terms · Privacy · Cookies</span></div>
   </div>
 </footer>
+<script>
+(function(){var d=document,h=d.documentElement;h.classList.add('js');
+var hd=d.querySelector('.hdr');function s(){hd.classList.toggle('solid',window.scrollY>40)}s();addEventListener('scroll',s,{passive:true});
+var m=d.getElementById('menu');
+d.querySelectorAll('[data-menu]').forEach(function(b){b.addEventListener('click',function(){m.classList.toggle('open');h.classList.toggle('lock',m.classList.contains('open'))})});
+m.querySelectorAll('nav a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open');h.classList.remove('lock')})});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});
+d.querySelectorAll('.rv').forEach(function(e){io.observe(e)});
+d.querySelectorAll('.qty').forEach(function(q){var sp=q.querySelector('span'),b=q.querySelectorAll('button');b[0].onclick=function(){sp.textContent=Math.max(1,+sp.textContent-1)};b[1].onclick=function(){sp.textContent=+sp.textContent+1}});
+function one(sel,item){d.querySelectorAll(sel).forEach(function(g){g.querySelectorAll(item).forEach(function(c){c.addEventListener('click',function(){g.querySelectorAll(item).forEach(function(x){x.classList.remove('on')});c.classList.add('on')})})})}
+one('.swatches','.sw');one('.chips','.chip');one('.thumbs','.t');
+})();
+</script>
 </body>
 </html>
