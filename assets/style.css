@@ -159,16 +159,22 @@ h2 em, h1 em { font-style: italic; color: var(--orange); font-weight: 300; }
 
 /* ---------- Footer ---------- */
 footer { background: var(--navy); color: rgba(241,230,207,.72); font-size: 14px; }
-.big-cta { padding: 120px 0 90px; border-bottom: 1px solid rgba(241,230,207,.14); }
-.big-cta h2 { color: var(--cream); font-size: clamp(54px, 9vw, 150px); line-height: .92; }
+.big-cta { padding: 120px 0 110px; border-bottom: 1px solid rgba(241,230,207,.14); }
+.cta-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 96px; align-items: center; }
+.big-cta h2 { color: var(--cream); font-size: clamp(52px, 6.6vw, 108px); line-height: .94; margin-top: 24px; }
 .big-cta h2 em { color: var(--orange-hi); }
-.big-cta .row { display: flex; justify-content: space-between; align-items: flex-end; gap: 40px; margin-top: 56px; flex-wrap: wrap; }
-.big-cta p { max-width: 380px; }
-.nl { display: flex; width: min(440px, 100%); border-bottom: 1px solid var(--cream); }
-.nl input { flex: 1; background: none; border: 0; padding: 16px 0; color: var(--cream); font: inherit; outline: none; }
+.cta-p { max-width: 440px; margin: 32px 0 36px; font-size: 17px; color: rgba(241,230,207,.78); }
+.nl { display: flex; width: min(520px, 100%); border: 1px solid rgba(241,230,207,.5); padding: 6px; transition: border-color .3s; }
+.nl:focus-within { border-color: var(--cream); }
+.nl input { flex: 1; min-width: 0; background: none; border: 0; padding: 0 18px; color: var(--cream); font: 300 16px var(--sans); outline: none; }
 .nl input::placeholder { color: rgba(241,230,207,.5); }
-.nl button { background: none; border: 0; color: var(--cream); font: 400 11px var(--sans); letter-spacing: .28em; text-transform: uppercase; cursor: pointer; }
-.nl button:hover { color: var(--brass); }
+.nl .btn { padding: 16px 30px; }
+.perks-f { display: flex; flex-wrap: wrap; gap: 10px 32px; margin-top: 26px; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: rgba(241,230,207,.6); }
+.perks-f li { display: flex; align-items: center; gap: 12px; margin: 0; }
+.perks-f li::before { content: ""; width: 5px; height: 5px; background: var(--brass); transform: rotate(45deg); }
+.cta-r .frame { position: relative; border: 1px solid rgba(184,147,74,.6); padding: 12px; }
+.cta-r .pic { aspect-ratio: 4/5; background: url(hero-tycoon.jpg) 28% 68%/150% auto; }
+.cta-r .frame span { position: absolute; left: 28px; bottom: 28px; font-size: 10px; letter-spacing: .26em; text-transform: uppercase; background: var(--navy); color: var(--cream); padding: 9px 14px; }
 .foot-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 48px; padding: 80px 0 0; }
 footer h4 { font: 400 11px var(--sans); letter-spacing: .32em; text-transform: uppercase; color: var(--brass); margin-bottom: 20px; }
 footer li { margin-bottom: 10px; }
@@ -364,7 +370,9 @@ th { font: 400 11px var(--sans); letter-spacing: .24em; text-transform: uppercas
   .qa { display: none; }
   .foot-grid { grid-template-columns: 1fr 1fr; gap: 40px 20px; padding-top: 60px; }
   .foot-grid > div:first-child { grid-column: 1 / -1; }
-  .big-cta { padding: 84px 0 64px; }
+  .big-cta { padding: 84px 0 72px; }
+  .cta-grid { grid-template-columns: 1fr; gap: 56px; }
+  .cta-r .pic { aspect-ratio: 16/11; }
   .fullbleed { height: 48vh; background-attachment: scroll; }
   .ph { min-height: 54vh; }
   .ph .wrap { padding-bottom: 52px; }
